@@ -1,6 +1,5 @@
-<% content_for :page_title do %>
-  <%= Spree.t(:total_sales_of_each_product) %>
-<% end %>
+<% admin_breadcrumb(link_to Spree.t(:reports), spree.admin_reports_path) %>
+<% admin_breadcrumb(Spree.t(:total_sales_by_product)) %>
 
 <% content_for :page_actions do %>
   <li><%= link_to_with_icon 'arrow-left', Spree.t(:back_to_reports_list), spree.admin_reports_url, class: 'button' %></li>

@@ -12,6 +12,8 @@ Spree::Core::Engine.routes.draw do
         post :stockout_report
         get :sales_total_net
         post :sales_total_net
+        get :sales_total_by_country
+        post :sales_total_by_country
         get :total_sales_by_product
         post :total_sales_by_product
         get :reimbursement_total

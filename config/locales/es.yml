@@ -22,3 +22,6 @@
     total_sales_by_product_description: 'Suma de todas las ventas totales de cada producto.'
     reimbursement_total: 'Total de devoluciones'
     reimbursement_total_description: 'Suma de todas las devoluciones realizadas'
+    total_sales_of_each_product: Total de ventas por producto
+    sales_total_by_country: Ventas por países
+    sales_total_by_country_description: Suma de todas las ventas totales de cada países

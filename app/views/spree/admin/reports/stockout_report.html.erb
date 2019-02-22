@@ -1,6 +1,5 @@
-<% content_for :page_title do %>
-  <%= Spree.t(:stock_report) %>
-<% end %>
+<% admin_breadcrumb(link_to Spree.t(:reports), spree.admin_reports_path) %>
+<% admin_breadcrumb(Spree.t(:stockout_report)) %>
 
-<%= render partial: ('table_stock_products_report'), locals: { url: stockout_report_admin_reports_path(name: 'to_csv') } %>
+<%= render partial: ('table_stock_products_report'), locals: { url: stockout_report_admin_reports_path(format: :csv) } %>
 

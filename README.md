@@ -1,26 +1,32 @@
-Spree Simple Reports
+Solidus Simple Reports
 ====================
 
 A spree extension with additional reports:
 
 * Total Sales Of Each Product
+* Total Sales By Country
+* Total Net Sales
+* Total Reimbursements
 * Order Counts for Last 10 Days
 * Order Counts for Last 30 Days
+* Total Sales Of Each Variant
+* Products without stock
+* Products Stock
 
 Installation
 ------------
 
-Add spree_simple_reports to your Gemfile:
+Add soldius_simple_reports to your Gemfile:
 
 ```ruby
-gem 'spree_simple_reports', github: 'nebulab/spree_simple_reports'
+gem 'solidus_simple_reports', git: 'https://github.com/2bedigital/solidus_simple_reports', branch: 'master'
 ```
 
 Bundle your dependencies and run the installation generator:
 
 ```shell
 bundle
-bundle exec rails g spree_simple_reports:install
+bundle exec rails g solidus_simple_reports:install
 ```
 
 Testing
@@ -37,7 +43,7 @@ When testing your applications integration with this extension you may use it's 
 Simply add this require statement to your spec_helper:
 
 ```ruby
-require 'spree_simple_reports/factories'
+require 'solidus_simple_reports/factories'
 ```
 
-Copyright (c) 2015 Nebulab, released under the New BSD License
+Copyright (c) 2015 Nebulab, 2bedigital 2019, released under the New BSD License

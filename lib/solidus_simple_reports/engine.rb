@@ -1,8 +1,8 @@
-module SpreeSimpleReports
+module SolidusSimpleReports
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_simple_reports'
+    engine_name 'solidus_simple_reports'
 
     # use rspec for tests
     config.generators do |g|

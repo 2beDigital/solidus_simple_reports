@@ -23,7 +23,7 @@
         <tr class="align-center">
           <td class="name">
             <% if product.respond_to?('options_text') %>
-              <%= link_to "#{product.name} #{product.options_text}", edit_admin_product_variant_path(product[:productId], product[:id]) %>
+              <%= link_to "#{product.name} #{product.options_text}", edit_admin_product_variant_path(product[:product_id], product[:id]) %>
             <% else %>
               <%= link_to "#{product.name}", edit_admin_product_path(product) %>
             <% end %>
